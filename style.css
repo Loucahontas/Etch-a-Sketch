@@ -1,0 +1,16 @@
+:root { --size: 960px; }
+
+body { font-family: system-ui, sans-serif; padding: 1rem; }
+
+.board {
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid #ccc;
+  display: flex;       /* lay children in a row */
+  flex-wrap: wrap;     /* wrap to make rows */
+}
+
+.cell {
+  box-sizing: border-box;   /* borders don’t change size */
+  border: 1px solid #eee;   /* light grid lines (optional) */
+}
